@@ -1,0 +1,314 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <f:view>
+    <af:document title="Historical UNIS" id="d1">
+      <af:form id="f1">
+        <af:pageTemplate viewId="/oracle/templates/threeColumnTemplate.jspx"
+                         id="pt1">
+          <f:facet name="center">
+            <af:panelGridLayout id="pgl2">
+              <af:gridRow marginTop="5px" height="auto" id="gr8">
+                <af:gridCell marginStart="5px" width="20%" id="gc44">
+                  <af:inputNumberSpinbox label="PersonNumber" id="it1"
+                                         value="#{action.d.personNumber}"
+                                         required="true"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc25">
+                  <af:inputText label="EffectiveStartDate" id="it2"
+                                value="#{action.d.effectiveStartDate}"
+                                maximumLength="20"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc4">
+                  <af:inputText label="LastName" id="it3"
+                                value="#{action.d.lastName}"
+                                maximumLength="50"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc20">
+                  <af:inputText label="PreviousLastName" id="it4"
+                                value="#{action.d.previousLastName}"
+                                maximumLength="50"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" marginEnd="5px"
+                             id="gc14">
+                  <af:inputText label="FirstName" id="it5"
+                                value="#{action.d.firstName}"
+                                maximumLength="50"/>
+                </af:gridCell>
+              </af:gridRow>
+              <af:gridRow marginTop="5px" height="auto" id="gr11">
+                <af:gridCell marginStart="5px" width="20%" id="gc49">
+                  <af:inputText label="MiddleNames" id="it6"
+                                value="#{action.d.middleNames}"
+                                maximumLength="50"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc12">
+                  <af:inputText label="NameInformation1" id="it7"
+                                value="#{action.d.nameInformation1}"
+                                maximumLength="50"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc52">
+                  <af:inputText label="NationalIdentifierType" id="it8"
+                                value="#{action.d.nationalIdentifierType}"
+                                maximumLength="20"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc6">
+                  <af:inputText label="NationalIdentifierNumber" id="it9"
+                                value="#{action.d.nationalIdentifierNumber}"
+                                maximumLength="20"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" marginEnd="5px"
+                             id="gc46">
+                  <af:inputText label="DateOfBirth" id="id1"
+                                value="#{action.d.dateOfBirth}"
+                                maximumLength="20"/>
+                </af:gridCell>
+              </af:gridRow>
+              <af:gridRow marginTop="5px" height="auto" id="gr9">
+                <af:gridCell marginStart="5px" width="20%" id="gc29">
+                  <af:inputText label="MaritalStatus" id="it10"
+                                value="#{action.d.maritalStatus}"
+                                maximumLength="4"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc45">
+                  <af:inputText label="Sex" id="it11" value="#{action.d.sex}"
+                                maximumLength="4"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc24">
+                  <af:inputText label="Ethnicity" id="it12"
+                                value="#{action.d.ethnicity}"
+                                maximumLength="20"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc22">
+                  <af:inputText label="Religion" id="it14"
+                                value="#{action.d.religion}"
+                                maximumLength="20"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" marginEnd="5px"
+                             id="gc50">
+                  <af:inputText label="BloodType" id="it13"
+                                value="#{action.d.bloodType}"
+                                maximumLength="4"/>
+                </af:gridCell>
+              </af:gridRow>
+              <af:gridRow marginTop="5px" height="auto" id="gr5">
+                <af:gridCell marginStart="5px" width="20%" id="gc32">
+                  <af:inputText label="TownOfBirth" id="it16"
+                                value="#{action.d.townOfBirth}"
+                                maximumLength="50"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc7">
+                  <af:inputText label="CountryOfBirth" id="it17"
+                                value="#{action.d.countryOfBirth}"
+                                maximumLength="20"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc18">
+                  <af:inputText label="RegionOfBirth" id="it18"
+                                value="#{action.d.regionOfBirth}"
+                                maximumLength="20"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc40">
+                  <af:inputText label="LegislationCode" id="it19"
+                                value="#{action.d.legislationCode}"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" marginEnd="5px"
+                             id="gc31">
+                  <af:inputText label="HighestEducationLevel" id="it15"
+                                value="#{action.d.highestEducationLevel}"
+                                maximumLength="20"/>
+                </af:gridCell>
+              </af:gridRow>
+              <af:gridRow marginTop="5px" height="auto" id="gr10">
+                <af:gridCell marginStart="5px" width="20%" id="gc30">
+                  <af:inputText label="AddressLine1" id="it20"
+                                value="#{action.d.addressLine1}"
+                                maximumLength="100"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc34">
+                  <af:inputText label="AddlAddressAttribute3" id="it21"
+                                value="#{action.d.addlAddressAttribute3}"
+                                maximumLength="100"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc26">
+                  <af:inputText label="PostalCode" id="it22"
+                                value="#{action.d.postalCode}"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc19">
+                  <af:inputText label="TownOrCity" id="it23"
+                                value="#{action.d.townOrCity}"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" marginEnd="5px"
+                             id="gc16">
+                  <af:inputText label="Country" id="it24"
+                                value="#{action.d.country}" maximumLength="20"/>
+                </af:gridCell>
+              </af:gridRow>
+              <af:gridRow marginTop="5px" height="auto" id="gr3">
+                <af:gridCell marginStart="5px" width="20%" id="gc42">
+                  <af:inputText label="AddressType" id="it25"
+                                value="#{action.d.addressType}"
+                                maximumLength="20"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc36">
+                  <af:inputText label="EmailAddress" id="it26"
+                                value="#{action.d.emailAddress}"
+                                maximumLength="50"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc51">
+                  <af:inputText label="EmailType" id="it27"
+                                value="#{action.d.emailType}"
+                                maximumLength="20"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc33">
+                  <af:inputText label="PhoneNumber" id="it28"
+                                value="#{action.d.phoneNumber}"
+                                maximumLength="15"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" marginEnd="5px"
+                             id="gc41">
+                  <af:inputText label="PhoneType" id="it29"
+                                value="#{action.d.phoneType}"
+                                maximumLength="10"/>
+                </af:gridCell>
+              </af:gridRow>
+              <af:gridRow marginTop="5px" height="auto" id="gr12">
+                <af:gridCell marginStart="5px" width="20%" id="gc27">
+                  <af:inputText label="WorkerType" id="it30"
+                                value="#{action.d.workerType}"
+                                maximumLength="10"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc17">
+                  <af:inputText label="ActionCode" id="it31"
+                                value="#{action.d.actionCode}"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc37">
+                  <af:inputText label="EffectiveEndDate" id="it32"
+                                value="#{action.d.effectiveEndDate}"
+                                maximumLength="20"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc21">
+                  <af:inputText label="AssignmentCategory" id="it33"
+                                value="#{action.d.assignmentCategory}"
+                                maximumLength="10"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" marginEnd="5px"
+                             id="gc43">
+                  <af:inputText label="WorkerCategory" id="it34"
+                                value="#{action.d.workerCategory}"
+                                maximumLength="10"/>
+                </af:gridCell>
+              </af:gridRow>
+              <af:gridRow marginTop="5px" height="auto" id="gr6">
+                <af:gridCell marginStart="5px" width="20%" id="gc15">
+                  <af:inputText label="HourlySalariedCode" id="it35"
+                                value="#{action.d.hourlySalariedCode}"
+                                maximumLength="20"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc10">
+                  <af:inputText label="GradeCode" id="it36"
+                                value="#{action.d.gradeCode}"
+                                maximumLength="10"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc9">
+                  <af:inputText label="PositionCode" id="it37"
+                                value="#{action.d.positionCode}"
+                                maximumLength="20"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc5">
+                  <af:inputText label="JobCode" id="it38"
+                                value="#{action.d.jobCode}" maximumLength="20"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" marginEnd="5px"
+                             id="gc48">
+                  <af:inputText label="LocationCode" id="it39"
+                                value="#{action.d.locationCode}"
+                                maximumLength="50"/>
+                </af:gridCell>
+              </af:gridRow>
+              <af:gridRow marginTop="5px" height="auto" id="gr4">
+                <af:gridCell marginStart="5px" width="20%" id="gc28">
+                  <af:inputText label="DepartmentName" id="it40"
+                                value="#{action.d.departmentName}"
+                                maximumLength="30"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc35">
+                  <af:inputText label="Frequency" id="it41"
+                                value="#{action.d.frequency}"
+                                maximumLength="30"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc23">
+                  <af:inputText label="NormalHours" id="it42"
+                                value="#{action.d.normalHours}"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc3">
+                  <af:inputText label="FullPartTime" id="it43"
+                                value="#{action.d.fullPartTime}"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" marginEnd="5px"
+                             id="gc13">
+                  <af:inputText label="PersonTypeCode" id="it44"
+                                value="#{action.d.personTypeCode}"
+                                maximumLength="10"/>
+                </af:gridCell>
+              </af:gridRow>
+              <af:gridRow marginTop="5px" height="auto" marginBottom="5px"
+                          id="gr7">
+                <af:gridCell marginStart="5px" width="20%" id="gc38">
+                  <af:inputText label="BankName" id="it45"
+                                value="#{action.d.bankName}"
+                                maximumLength="50"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc39">
+                  <af:inputText label="AccountNumber" id="it46"
+                                value="#{action.d.accountNumber}"
+                                maximumLength="20"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc8">
+                  <af:inputNumberSpinbox label="SalaryAmount" id="it47"
+                                         value="#{action.d.salaryAmount}"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" id="gc11">
+                  <af:inputText label="ExternalIdentifierNumber" id="it48"
+                                value="#{action.d.externalIdentifierNumber}"
+                                maximumLength="20"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="20%" marginEnd="5px"
+                             id="gc47">
+                  <af:inputText label="ExternalIdentifierType" id="it49"
+                                value="#{action.d.externalIdentifierType}"
+                                maximumLength="4"/>
+                </af:gridCell>
+              </af:gridRow>
+            </af:panelGridLayout>
+          </f:facet>
+          <f:facet name="end">
+            <af:group id="g1">
+              <af:panelGridLayout id="pgl1">
+                <af:gridRow marginTop="5px" height="auto" id="gr2">
+                  <af:gridCell marginStart="5px" width="100%" marginEnd="5px"
+                               id="gc1">
+                    <af:commandButton text="Guardar" id="cb1"
+                                      actionListener="#{action.insert}"/>
+                  </af:gridCell>
+                </af:gridRow>
+                <af:gridRow marginTop="5px" height="auto" marginBottom="5px"
+                            id="gr1">
+                  <af:gridCell marginStart="5px" width="100%" marginEnd="5px"
+                               id="gc2">
+                    <af:goButton text="Cancelar" id="gb1"
+                                 destination="/faces/index"/>
+                  </af:gridCell>
+                </af:gridRow>
+              </af:panelGridLayout>
+            </af:group>
+          </f:facet>
+          <f:facet name="branding"/>
+          <f:facet name="copyright"/>
+        </af:pageTemplate>
+      </af:form>
+    </af:document>
+  </f:view>
+</jsp:root>

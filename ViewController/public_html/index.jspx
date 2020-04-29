@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <f:view>
+    <af:document title="Historical UNIS" id="d1">
+      <af:form id="f1">
+        <af:pageTemplate viewId="/oracle/templates/threeColumnTemplate.jspx"
+                         id="pt1">
+          <f:facet name="center">
+            <af:table var="row" rowBandingInterval="0" id="t1"
+                      rowSelection="single" value="#{listas.lts_UNIS}"
+                      selectionListener="#{listas.selecction}"
+                      displayRow="selected">
+              <af:column sortable="false" headerText="PersonNumber" id="c5">
+                <af:outputText value="#{row.personNumber}" id="ot3"/>
+              </af:column>
+              <af:column sortable="false" headerText="EffectiveStartDate"
+                         id="c3">
+                <af:outputText value="#{row.effectiveStartDate}" id="ot1"/>
+              </af:column>
+              <af:column sortable="false" headerText="LastName" id="c4">
+                <af:outputText value="#{row.lastName}" id="ot6"/>
+              </af:column>
+              <af:column sortable="false" headerText="PreviousLastName" id="c2">
+                <af:outputText value="#{row.previousLastName}" id="ot4"/>
+              </af:column>
+              <af:column sortable="false" headerText="FirstName" id="c1">
+                <af:outputText value="#{row.firstName}" id="ot2"/>
+              </af:column>
+              <af:column sortable="false" headerText="MiddleNames" id="c6">
+                <af:outputText value="#{row.middleNames}" id="ot5"/>
+              </af:column>
+              <af:column sortable="false" headerText="NameInformation1" id="c7">
+                <af:outputText value="#{row.nameInformation1}" id="ot7"/>
+              </af:column>
+              <af:column sortable="false" headerText="NationalIdentifierType"
+                         id="c8">
+                <af:outputText value="#{row.nationalIdentifierType}" id="ot8"/>
+              </af:column>
+              <af:column sortable="false" headerText="NationalIdentifierNumber"
+                         id="c9">
+                <af:outputText value="#{row.nationalIdentifierNumber}"
+                               id="ot10"/>
+              </af:column>
+              <af:column sortable="false" headerText="DateOfBirth" id="c10">
+                <af:outputText value="#{row.dateOfBirth}" id="ot11"/>
+              </af:column>
+              <af:column sortable="false" headerText="MaritalStatus" id="c11">
+                <af:outputText value="#{row.maritalStatus}" id="ot12"/>
+              </af:column>
+              <af:column sortable="false" headerText="Sex" id="c12">
+                <af:outputText value="#{row.sex}" id="ot13"/>
+              </af:column>
+              <af:column sortable="false" headerText="Ethnicity" id="c13">
+                <af:outputText value="#{row.ethnicity}" id="ot14"/>
+              </af:column>
+              <af:column sortable="false" headerText="Religion" id="c14">
+                <af:outputText value="#{row.religion}" id="ot15"/>
+              </af:column>
+              <af:column sortable="false" headerText="BloodType" id="c15">
+                <af:outputText value="#{row.bloodType}" id="ot16"/>
+              </af:column>
+              <af:column sortable="false" headerText="TownOfBirth" id="c16">
+                <af:outputText value="#{row.townOfBirth}" id="ot17"/>
+              </af:column>
+              <af:column sortable="false" headerText="CountryOfBirth" id="c17">
+                <af:outputText value="#{row.countryOfBirth}" id="ot18"/>
+              </af:column>
+              <af:column sortable="false" headerText="RegionOfBirth" id="c18">
+                <af:outputText value="#{row.regionOfBirth}" id="ot19"/>
+              </af:column>
+              <af:column sortable="false" headerText="LegislationCode" id="c19">
+                <af:outputText value="#{row.legislationCode}" id="ot20"/>
+              </af:column>
+              <af:column sortable="false" headerText="HighestEducationLevel"
+                         id="c20">
+                <af:outputText value="#{row.highestEducationLevel}" id="ot21"/>
+              </af:column>
+              <af:column sortable="false" headerText="AddressLine1" id="c21">
+                <af:outputText value="#{row.addressLine1}" id="ot22"/>
+              </af:column>
+              <af:column sortable="false" headerText="AddlAddressAttribute3"
+                         id="c22">
+                <af:outputText value="#{row.addlAddressAttribute3}" id="ot23"/>
+              </af:column>
+              <af:column sortable="false" headerText="PostalCode" id="c23">
+                <af:outputText value="#{row.postalCode}" id="ot24"/>
+              </af:column>
+              <af:column sortable="false" headerText="TownOrCity" id="c24">
+                <af:outputText value="#{row.townOrCity}" id="ot25"/>
+              </af:column>
+              <af:column sortable="false" headerText="Country" id="c25">
+                <af:outputText value="#{row.country}" id="ot26"/>
+              </af:column>
+              <af:column sortable="false" headerText="AddressType" id="c26">
+                <af:outputText value="#{row.addressType}" id="ot27"/>
+              </af:column>
+              <af:column sortable="false" headerText="EmailAddress" id="c27">
+                <af:outputText value="#{row.emailAddress}" id="ot28"/>
+              </af:column>
+              <af:column sortable="false" headerText="EmailType" id="c28">
+                <af:outputText value="#{row.emailType}" id="ot29"/>
+              </af:column>
+              <af:column sortable="false" headerText="PhoneNumber" id="c29">
+                <af:outputText value="#{row.phoneNumber}" id="ot30"/>
+              </af:column>
+              <af:column sortable="false" headerText="PhoneType" id="c30">
+                <af:outputText value="#{row.phoneType}" id="ot31"/>
+              </af:column>
+              <af:column sortable="false" headerText="WorkerType" id="c31">
+                <af:outputText value="#{row.workerType}" id="ot32"/>
+              </af:column>
+              <af:column sortable="false" headerText="ActionCode" id="c32">
+                <af:outputText value="#{row.actionCode}" id="ot33"/>
+              </af:column>
+              <af:column sortable="false" headerText="EffectiveEndDate"
+                         id="c33">
+                <af:outputText value="#{row.effectiveEndDate}" id="ot34"/>
+              </af:column>
+              <af:column sortable="false" headerText="AssignmentCategory"
+                         id="c34">
+                <af:outputText value="#{row.assignmentCategory}" id="ot35"/>
+              </af:column>
+              <af:column sortable="false" headerText="WorkerCategory" id="c35">
+                <af:outputText value="#{row.workerCategory}" id="ot36"/>
+              </af:column>
+              <af:column sortable="false" headerText="HourlySalariedCode"
+                         id="c36">
+                <af:outputText value="#{row.hourlySalariedCode}" id="ot37"/>
+              </af:column>
+              <af:column sortable="false" headerText="GradeCode" id="c37">
+                <af:outputText value="#{row.gradeCode}" id="ot38"/>
+              </af:column>
+              <af:column sortable="false" headerText="PositionCode" id="c38">
+                <af:outputText value="#{row.positionCode}" id="ot39"/>
+              </af:column>
+              <af:column sortable="false" headerText="JobCode" id="c39">
+                <af:outputText value="#{row.jobCode}" id="ot40"/>
+              </af:column>
+              <af:column sortable="false" headerText="LocationCode" id="c40">
+                <af:outputText value="#{row.locationCode}" id="ot41"/>
+              </af:column>
+              <af:column sortable="false" headerText="DepartmentName" id="c41">
+                <af:outputText value="#{row.departmentName}" id="ot42"/>
+              </af:column>
+              <af:column sortable="false" headerText="Frequency" id="c42">
+                <af:outputText value="#{row.frequency}" id="ot43"/>
+              </af:column>
+              <af:column sortable="false" headerText="NormalHours" id="c43">
+                <af:outputText value="#{row.normalHours}" id="ot44"/>
+              </af:column>
+              <af:column sortable="false" headerText="FullPartTime" id="c44">
+                <af:outputText value="#{row.fullPartTime}" id="ot45"/>
+              </af:column>
+              <af:column sortable="false" headerText="PersonTypeCode" id="c45">
+                <af:outputText value="#{row.personTypeCode}" id="ot46"/>
+              </af:column>
+              <af:column sortable="false" headerText="BankName" id="c46">
+                <af:outputText value="#{row.bankName}" id="ot47"/>
+              </af:column>
+              <af:column sortable="false" headerText="AccountNumber" id="c47">
+                <af:outputText value="#{row.accountNumber}" id="ot48"/>
+              </af:column>
+              <af:column sortable="false" headerText="SalaryAmount" id="c48">
+                <af:outputText value="#{row.salaryAmount}" id="ot49"/>
+              </af:column>
+              <af:column sortable="false" headerText="ExternalIdentifierNumber"
+                         id="c49">
+                <af:outputText value="#{row.externalIdentifierNumber}"
+                               id="ot9"/>
+              </af:column>
+              <af:column sortable="false" headerText="ExternalIdentifierType"
+                         id="c50">
+                <af:outputText value="#{row.externalIdentifierType}" id="ot50"/>
+              </af:column>
+            </af:table>
+          </f:facet>
+          <f:facet name="end">
+            <af:group id="g1">
+              <af:panelGridLayout id="pgl1">
+                <af:gridRow marginTop="5px" height="auto" id="gr2">
+                  <af:gridCell marginStart="5px" width="100%" marginEnd="5px"
+                               id="gc1">
+                    <af:goButton text="Nuevo Registro" id="gb1"
+                                 destination="/faces/crear.jspx"/>
+                  </af:gridCell>
+                </af:gridRow>
+                <af:gridRow marginTop="5px" height="auto" marginBottom="5px"
+                            id="gr1">
+                  <af:gridCell marginStart="5px" width="100%" marginEnd="5px"
+                               id="gc2">
+                    <af:goButton text="Editar" id="gb2"
+                                 destination="/faces/edit.jspx"/>
+                  </af:gridCell>
+                </af:gridRow>
+                <af:gridRow marginTop="5px" height="auto" marginBottom="5px"
+                            id="gr3">
+                  <af:gridCell marginStart="5px" width="100%" marginEnd="5px"
+                               id="gc3">
+                    <af:commandButton text="Eliminar" id="cb1"
+                                      actionListener="#{listas.delete}"/>
+                  </af:gridCell>
+                </af:gridRow>
+                <af:gridRow marginTop="5px" height="auto" marginBottom="5px"
+                            id="gr4">
+                  <af:gridCell marginStart="5px" width="100%" marginEnd="5px"
+                               id="gc4">
+                    <af:commandButton text="Actualizar lista" id="cb2"
+                                      actionListener="#{listas.listar}"/>
+                  </af:gridCell>
+                </af:gridRow>
+              </af:panelGridLayout>
+            </af:group>
+          </f:facet>
+          <f:facet name="branding"/>
+          <f:facet name="copyright"/>
+        </af:pageTemplate>
+      </af:form>
+    </af:document>
+  </f:view>
+</jsp:root>
